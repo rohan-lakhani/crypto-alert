@@ -18,7 +18,6 @@ func RegisterRoutes(e *echo.Echo, alertService *services.AlertService) {
 
 func createAlert(alertService *services.AlertService) echo.HandlerFunc {
 	return func(c echo.Context) error {
-		log.Println("Creating alert...")
 		reqAlert := new(models.AlertRequest)
 		if err := c.Bind(reqAlert); err != nil {
 			return c.JSON(http.StatusBadRequest, map[string]string{"error": "Invalid alert data"})

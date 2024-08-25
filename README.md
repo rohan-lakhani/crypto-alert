@@ -21,7 +21,7 @@ Follow these steps to set up and run the project:
    go run main.go
    ```
 
-   After running this command, you will see all pending alerts in the log.
+   After running this command, you will see all pending alerts and RSI & MACD value in the log.
 
 ## Usage
 
